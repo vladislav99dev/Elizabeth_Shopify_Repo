@@ -13,10 +13,8 @@
     {% endif %}
     {% when "featured_image" %}
     <img src="{{article.image | img_url: 'medium'}}" alt="{{article.image.alt}}">
-    {% when "artilce_content" %}
+    {% when "article_content" %}
     <div>{{ article.content }}</div>
-{% else %}
-
   {% endcase %}
 
 {% endfor %}
